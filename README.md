@@ -37,15 +37,9 @@ def stones():
 
 ## Usage
 
-How to use
+How to use:
 
-```erb
-<%= your_code_goes @here do |f| %>
-  <%= f.input :example %>
-  <%= f.input :example %>
-  <%= f.button :example %>
-<% end %>
-```
+compile on termial
 
 ## Known Issues
 
