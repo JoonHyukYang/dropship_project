@@ -44,3 +44,4 @@ send us a pull request.
 
 ## License
 
+MIT
