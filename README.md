@@ -1,53 +1,38 @@
 # Dropship_project
 
-
-## Description
-
 **dropship_gomoku** 
 
-Simple board game operates on terminal
+* Simple board game 
+* [Rules](https://en.wikipedia.org/wiki/Gomoku#Official_rules).
 
-[Rules](https://en.wikipedia.org/wiki/Gomoku#Official_rules).
 
+## How to play
 
-## Information
+* clone this project
+* compile dropship_gomoku.py on terminal(MacOS)
 
-method :
+## Features
 
-```python
-"""
-calculate stones are five in a row.
-"""
-def five_in_a_row():
-```
+* Unique stones
+* boring
 
-```python
-"""
-make initial board
-"""
-def board():
-```
+## Aim
 
-```python
-"""
-manage stones(points (x,y)
-"""
-def stones():
-```
+**First aim**
+* make game operates on terminal by input (x,y)-coordinate
+* print stones
+
+**Second aim**
+* if we can do, make with GUI
+
 
 ## Known Issues
 
-If you discover any bugs, feel free to create an issue on GitHub fork and
+* If you discover any bugs, feel free to create an issue on GitHub fork and
 send us a pull request.
 
-[Issues List](https://github.com/3people/dropship_project).
-
-## Authors
-
-* [lee se myeong] (https://github.com/3people)  
-* [lee jeong gyu] (https://github.com/JeongGod)
-* [choi joon] (https://github.com/prodroper)  
+* [Issues List](https://github.com/3people/dropship_project).
 
 ## License
 
-[License information](https://github.com/3people/dropship_project/blob/master/LICENSE)
+* [License information](https://github.com/3people/dropship_project/blob/master/LICENSE)
