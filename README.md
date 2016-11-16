@@ -4,14 +4,17 @@
 ## Description
 
 **dropship_gomoku** 
-blah blah
 
-## Installation
+[Rules](https://en.wikipedia.org/wiki/Gomoku#Official_rules).
 
-Download :
+ It operates on terminal(MacOS).
+
+## Information
+
+method :
 
 ```python
-def(calc):
+def five_in_a_row():
 ```
 
 ## Usage
@@ -29,7 +32,7 @@ How to use
 ## Information
 
 
-### Known Issues
+## Known Issues
 
 If you discover any bugs, feel free to create an issue on GitHub fork and
 send us a pull request.
