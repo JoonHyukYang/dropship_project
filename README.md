@@ -37,8 +37,6 @@ def stones():
 
 ## Usage
 
-How to use:
-
 compile on termial
 
 ## Known Issues
