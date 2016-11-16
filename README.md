@@ -9,8 +9,8 @@ blah blah
 
 Download :
 
-```ruby
-gem 'my_example_gem'
+```python
+def(calc):
 ```
 
 Run the following command to install it:
