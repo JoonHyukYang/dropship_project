@@ -38,9 +38,9 @@ send us a pull request.
 
 ## Authors
 
-* [lee se myeong] (https://3people.github.io)  
-* [lee jeong gyu] (https://JeongGod.github.io)
-* [choi joon] (https://prodroper.github.io)  
+* [lee se myeong] (https://github.com/3people)  
+* [lee jeong gyu] (https://github.com/JeongGod)
+* [choi joon] (https://github.com/prodroper)  
 
 ## License
 
