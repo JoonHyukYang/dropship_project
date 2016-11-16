@@ -5,9 +5,10 @@
 
 **dropship_gomoku** 
 
+Simple board game operates on terminal
+
 [Rules](https://en.wikipedia.org/wiki/Gomoku#Official_rules).
 
-It operates on terminal(MacOS).
 
 ## Information
 
@@ -33,11 +34,6 @@ manage stones(points (x,y)
 """
 def stones():
 ```
-
-
-## Usage
-
-compile on termial
 
 ## Known Issues
 
