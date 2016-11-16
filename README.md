@@ -39,7 +39,7 @@ Usage explanation goes here
 If you discover any bugs, feel free to create an issue on GitHub fork and
 send us a pull request.
 
-[Issues List](Github Issues List URL goes here).
+[Issues List](https://github.com/3people/dropship_project).
 
 ## Authors
 
