@@ -62,4 +62,4 @@ send us a pull request.
 
 ## License
 
-MIT
+[License information](https://github.com/3people/dropship_project/blob/master/LICENSE)
