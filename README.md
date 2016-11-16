@@ -2,6 +2,7 @@
 
 
 ## Description
+
 **dropship_gomoku** 
 blah blah
 
@@ -13,15 +14,9 @@ Download :
 def(calc):
 ```
 
-Run the following command to install it:
-
-```console
-bundle install
-```
-
 ## Usage
 
-Usage explanation goes here
+How to use
 
 ```erb
 <%= your_code_goes @here do |f| %>
