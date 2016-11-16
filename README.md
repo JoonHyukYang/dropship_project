@@ -7,15 +7,33 @@
 
 [Rules](https://en.wikipedia.org/wiki/Gomoku#Official_rules).
 
- It operates on terminal(MacOS).
+It operates on terminal(MacOS).
 
 ## Information
 
 method :
 
 ```python
+"""
+calculate stones are five in a row.
+"""
 def five_in_a_row():
 ```
+
+```python
+"""
+make initial board
+"""
+def board():
+```
+
+```python
+"""
+manage stones(points (x,y)
+"""
+def stones():
+```
+
 
 ## Usage
 
@@ -28,9 +46,6 @@ How to use
   <%= f.button :example %>
 <% end %>
 ```
-
-## Information
-
 
 ## Known Issues
 
