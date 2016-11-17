@@ -8,16 +8,16 @@
 
 //게임 설명
 void Gameintro(void)
-{	
+{
 	printf("지금부터 오목 게임을 시작하겠습니다.\n");
-	printf("오목 게임은 가로, 세로 혹은 대각선 방향으로\n"); 
+	printf("오목 게임은 가로, 세로 혹은 대각선 방향으로\n");
 	printf("연속 5개의 돌을 놓았을 시에 승리하는 게임입니다.\n");
 	printf("실행 창을 최대한 크게 해놓고 플레이해주세요!!\n");
 }
 
 //게임 판 출력 함수
 void MakePan(int (*ptpan)[21])
-{	
+{
 	int i,j;
 	printf("\n");
 	printf("   ");
@@ -25,7 +25,7 @@ void MakePan(int (*ptpan)[21])
 	{
 		if(i<=9)
 		{
-			printf(" %d",i);
+			printf("%d ",i);
 		}
 		else
 		{
@@ -47,18 +47,19 @@ void MakePan(int (*ptpan)[21])
 
 		for(j=1;j<=20;j++)
 		{
-			
+
 			if((*(ptpan+i))[j]==0)
 			{
-				printf("┼");
+				printf("+ ");
+
 			}
 			else if((*(ptpan+i))[j]>0)
 			{
-				printf("●");
+				printf("● ");
 			}
 			else
 			{
-				printf("○");
+				printf("○ ");
 			}
 		}
 		printf("\n");
@@ -76,7 +77,7 @@ int win(int (*ptpan)[21])
 	int rightdg=0;
 	int leftdg=0;
 
-	//가로 연속 5개 있는지 검사구문	
+	//가로 연속 5개 있는지 검사구문
 	for(i=1;i<=20;i++)
 	{
 		for(j=1;j<=16;j++)
@@ -94,7 +95,7 @@ int win(int (*ptpan)[21])
 		}
 	}
 
-	//세로 연속 5개 있는지 검사구문	
+	//세로 연속 5개 있는지 검사구문
 	for(i=1;i<=16;i++)
 	{
 		for(j=1;j<=20;j++)
@@ -112,7 +113,7 @@ int win(int (*ptpan)[21])
 		}
 	}
 
-	//오른대각 연속 5개 있는지 검사구문	
+	//오른대각 연속 5개 있는지 검사구문
 	for(i=1;i<=16;i++)
 	{
 		for(j=1;j<=16;j++)
@@ -130,7 +131,7 @@ int win(int (*ptpan)[21])
 		}
 	}
 
-	//왼대각 연속 5개 있는지 검사구문	
+	//왼대각 연속 5개 있는지 검사구문
 	for(i=1;i<=16;i++)
 	{
 		for(j=5;j<=20;j++)
@@ -177,10 +178,10 @@ int main(void)
 	while(1)
 	{
 		while(replay==0)     //黑 차례
-		{			
+		{
 			printf("흑돌의 차례입니다.\n");
 			printf("몇번째 줄 몇번째 칸에 놓으시겠습니까?\n");
-			scanf_s("%d %d",&x,&y);
+			scanf("%d %d",&x,&y);
 
 			if(x<1||y<1||x>20||y>20)
 			{
@@ -188,20 +189,20 @@ int main(void)
 				printf("정해진 범위 내에서 돌을 두어 주십시오\n\n");
 				continue;
 			}
-	
+
 			if(pan[x][y]==0)
 			{
 				printf("%d번째 줄 %d번째 칸에 놓으셨습니다.\n",x,y);
 				pan[x][y]=1;
 				replay++;
-				
+
 				MakePan(pan);
 			}
 			else
 			{
 				printf("\n\n이미 돌이 놓여져 있습니다!!\n\n");
 				continue;
-			}			
+			}
 		}
 
 		winner=win(pan);
@@ -210,13 +211,13 @@ int main(void)
 		{
 			goto BLACKWIN;
 		}
-	
+
 		while(replay==1)     //白 차례
 		{
 
 			printf("백돌의 차례입니다.\n");
 			printf("몇번째 줄 몇번째 칸에 놓으시겠습니까?\n");
-			scanf_s("%d %d",&x,&y);
+			scanf("%d %d",&x,&y);
 
 			if(x<1||y<1||x>20||y>20)
 			{
@@ -224,13 +225,13 @@ int main(void)
 				printf("정해진 범위 내에서 돌을 두어 주십시오\n\n");
 				continue;
 			}
-	
+
 			if(pan[x][y]==0)
 			{
 				printf("%d번째 줄 %d번째 칸에 놓으셨습니다.\n",x,y);
 				pan[x][y]=-1;
 				replay--;
-				
+
 				MakePan(pan);
 			}
 			else
