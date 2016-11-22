@@ -8,28 +8,22 @@
 
 ## How to play
 
-* clone this project
 * compile dropship_gomoku.py on terminal(MacOS)
-
-## Features
-
-* Unique stones
-* boring
 
 ## Aim
 
 **First aim**
+
 * make game operates on terminal by input (x,y)-coordinate
 * print stones
 
 **Second aim**
-* if we can do, make with GUI
 
+* GUI
 
 ## Known Issues
 
-* If you discover any bugs, feel free to create an issue on GitHub fork and
-send us a pull request.
+* If you discover any bugs, feel free to create an issue on GitHub fork and send us a pull request.
 
 * [Issues List](https://github.com/3people/dropship_project).
 
