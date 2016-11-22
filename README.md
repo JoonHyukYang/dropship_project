@@ -1,14 +1,12 @@
-# Dropship_project
+## dropship_gomoku  
 
-**dropship_gomoku** 
-
-* Simple board game 
+* **dropship_gomoku** is simple board game 
 * [Rules](https://en.wikipedia.org/wiki/Gomoku#Official_rules).
-
 
 ## How to play
 
 * compile dropship_gomoku.py on terminal(MacOS)
+* input coordinate 
 
 ## Aim
 
