@@ -10,12 +10,12 @@
 
 ## Aim
 
-**First aim**
+**1**
 
 * make game operates on terminal by input (x,y)-coordinate
 * print stones
 
-**Second aim**
+**2**
 
 * GUI
 
