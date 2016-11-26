@@ -1,14 +1,6 @@
 import socket
 import os
-# from dropship_gomoku import Gomoku
-
-def printboard() :
-    os.system("clear")
-    print("   "+"".join(str(n+1).rjust(3) for n in range(SIZE)))
-    for i in range(SIZE):
-        print(str(i+1).rjust(2), end = " ")
-        for j in range(SIZE):
-            print(str(BOARD[i][j]).rjust(2), end=" " if j < SIZE-1 else "\n")
+from functions import *
 
 SIZE = 15
 BOARD = [['+' for _ in range(SIZE)] for _ in range(SIZE)]
@@ -30,19 +22,19 @@ c_name = bytes.decode(data)
 print(c_name+"님이 접속하셨습니다", addr[0])
 
 while 1:
+    printboard(BOARD, SIZE)
+    print("상대를 기다리는중..")
+
     data = conn.recv(1024)
     decoded_data = bytes.decode(data)
-    print(decoded_data)
-    # if decoded_data == "exit" : break
     x, y = map(int, decoded_data.split(","))
     BOARD[x-1][y-1] = "○"
 
-    # print (decoded_data)
-    printboard()
-    cor = input("get cord ex) x,y : ")
-    x, y = map(int, cor.split(","))
+    printboard(BOARD, SIZE)
+    x, y = getcor(name, "●", BOARD, SIZE)
     BOARD[x-1][y-1] = "●"
 
-    data = str.encode(cor)
+    data = str.encode(str(x) + "," + str(y))
     conn.sendall(data)
+
 conn.close()
