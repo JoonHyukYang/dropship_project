@@ -2,12 +2,6 @@ import socket
 import os
 from functions import *
 
-SIZE = 15
-BOARD = [['+' for _ in range(SIZE)] for _ in range(SIZE)]
-BOARD[SIZE//2][SIZE//2] = "●"
-
-HOST = '127.0.0.1'
-PORT = 50007
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 name = input("이름을 입력해주세요 : ")
 
